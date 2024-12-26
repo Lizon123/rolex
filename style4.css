@@ -1,0 +1,1359 @@
+.mac-book-air-1,
+.mac-book-air-1 * {
+  box-sizing: border-box;
+}
+.mac-book-air-1 {
+  background: #ffffff;
+  height: 5324px;
+  position: relative;
+  overflow: hidden;
+}
+.background {
+  background: linear-gradient(
+    90deg,
+    rgba(11, 62, 39, 1) 0%,
+    rgba(25, 113, 73, 1) 100%
+  );
+  width: 1289px;
+  height: 111px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.list-item-button {
+  width: 102px;
+  height: 36px;
+  position: absolute;
+  left: 92px;
+  top: 38px;
+}
+.div {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: 34px;
+  top: 8px;
+  width: 55px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  overflow: visible;
+}
+.figure-link-go-to-home-page {
+  width: 52.9px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+}
+.svg2 {
+  width: 36.9px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+}
+.vector {
+  width: 98.57%;
+  height: 98.17%;
+  position: absolute;
+  right: 0.65%;
+  left: 0.77%;
+  bottom: 0.86%;
+  top: 0.97%;
+  overflow: visible;
+}
+.vector2 {
+  width: 98.57%;
+  height: 97.97%;
+  position: absolute;
+  right: 0.47%;
+  left: 0.95%;
+  bottom: 1.22%;
+  top: 0.81%;
+  overflow: visible;
+}
+.vector3 {
+  width: 98.57%;
+  height: 98.17%;
+  position: absolute;
+  right: 0.65%;
+  left: 0.77%;
+  bottom: 0.86%;
+  top: 0.97%;
+  overflow: visible;
+}
+.vector4 {
+  width: 98.57%;
+  height: 98.17%;
+  position: absolute;
+  right: 0.65%;
+  left: 0.77%;
+  bottom: 0.86%;
+  top: 0.97%;
+  overflow: visible;
+}
+.vector5 {
+  width: 11.74%;
+  height: 10.83%;
+  position: absolute;
+  right: 87.38%;
+  left: 0.88%;
+  bottom: 64.96%;
+  top: 24.21%;
+  overflow: visible;
+}
+.vector6 {
+  width: 13.3%;
+  height: 12.26%;
+  position: absolute;
+  right: 67.09%;
+  left: 19.61%;
+  bottom: 80.03%;
+  top: 7.72%;
+  overflow: visible;
+}
+.vector7 {
+  width: 12.31%;
+  height: 12.27%;
+  position: absolute;
+  right: 44.06%;
+  left: 43.63%;
+  bottom: 86.71%;
+  top: 1.03%;
+  overflow: visible;
+}
+.vector8 {
+  width: 13.43%;
+  height: 12.84%;
+  position: absolute;
+  right: 19.93%;
+  left: 66.64%;
+  bottom: 79.35%;
+  top: 7.81%;
+  overflow: visible;
+}
+.vector9 {
+  width: 13.13%;
+  height: 12.24%;
+  position: absolute;
+  right: 0.73%;
+  left: 86.13%;
+  bottom: 63.61%;
+  top: 24.16%;
+  overflow: visible;
+}
+.group {
+  width: 88.36%;
+  height: 91.72%;
+  position: absolute;
+  right: 1.3%;
+  left: 10.34%;
+  bottom: 2.6%;
+  top: 5.68%;
+  overflow: visible;
+}
+.vector10 {
+  width: 66.86%;
+  height: 66.4%;
+  position: absolute;
+  right: 31.21%;
+  left: 1.93%;
+  bottom: 0.53%;
+  top: 33.08%;
+  overflow: visible;
+}
+.vector11 {
+  width: 27.07%;
+  height: 4.31%;
+  position: absolute;
+  right: 31.23%;
+  left: 41.7%;
+  bottom: 1.81%;
+  top: 93.88%;
+  overflow: visible;
+}
+.vector12 {
+  width: 32.54%;
+  height: 8.39%;
+  position: absolute;
+  right: 34.41%;
+  left: 33.05%;
+  bottom: 14.93%;
+  top: 76.68%;
+  overflow: visible;
+}
+.item-button {
+  width: 95.64px;
+  height: 38px;
+  position: absolute;
+  left: 816px;
+  top: 38px;
+}
+.svg3 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  overflow: visible;
+}
+.div2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: 34.25px;
+  top: 7.01px;
+  width: 53.59px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link {
+  height: 38px;
+  position: absolute;
+  right: 210px;
+  left: 958px;
+  top: 38px;
+}
+.div3 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: 46px;
+  top: 7px;
+  width: 66px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector13 {
+  width: 11.99%;
+  height: 47.37%;
+  position: absolute;
+  right: 70.66%;
+  left: 17.36%;
+  bottom: 26.32%;
+  top: 26.32%;
+  overflow: visible;
+}
+.item-link2 {
+  height: 38px;
+  position: absolute;
+  right: 47px;
+  left: 1125px;
+  top: 38px;
+}
+.div4 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: 31.25px;
+  top: 7.01px;
+  width: 78.08px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 8px;
+  top: 9.01px;
+  overflow: visible;
+}
+.heading-2-explore-the-rolex-collection {
+  background: linear-gradient(
+    120.55deg,
+    rgba(16, 99, 61, 1) 0%,
+    rgba(26, 145, 90, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "InknutAntiqua-Bold", sans-serif;
+  font-size: 96px;
+  line-height: 100px;
+  font-weight: 700;
+  position: absolute;
+  left: 385px;
+  top: 2778px;
+  width: 519px;
+  height: 198px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.futer-2 {
+  background: #f8f8f8;
+  height: 494px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 4400px;
+}
+.section-svg {
+  width: 87.28px;
+  height: 50px;
+  position: absolute;
+  left: 68px;
+  top: 46px;
+}
+.vector14 {
+  width: 27.39%;
+  height: 52.03%;
+  position: absolute;
+  right: 36.02%;
+  left: 36.59%;
+  bottom: 46.78%;
+  top: 1.19%;
+  overflow: visible;
+}
+.group2 {
+  width: 98.54%;
+  height: 31.18%;
+  position: absolute;
+  right: 0.58%;
+  left: 0.87%;
+  bottom: 3.22%;
+  top: 65.59%;
+  overflow: visible;
+}
+.nav-list {
+  height: 384px;
+  position: absolute;
+  right: 56px;
+  left: 271px;
+  top: 87px;
+}
+.item {
+  height: 200px;
+  position: absolute;
+  right: 770px;
+  left: 0px;
+  top: 0px;
+}
+.link {
+  height: 28.63px;
+  position: absolute;
+  right: 7.8px;
+  left: 0px;
+  top: 0px;
+}
+.rolex-watches {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24.78125px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 176.87px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.list {
+  height: 171.75px;
+  position: absolute;
+  right: 7.8px;
+  left: 0px;
+  top: 28.62px;
+}
+.item-link3 {
+  width: 145.39px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.new-watches-2024 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 145.59px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link4 {
+  width: 117.05px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 28.63px;
+}
+.find-your-rolex {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 117.25px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link5 {
+  width: 159.39px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 57.25px;
+}
+.configure-your-rolex {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 159.59px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link6 {
+  width: 111.73px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 85.88px;
+}
+.men-s-watches {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 111.93px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link7 {
+  width: 135.78px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 114.5px;
+}
+.women-s-watches {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 135.98px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link8 {
+  width: 103.14px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 143.13px;
+}
+.gold-watches {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 103.34px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item2 {
+  height: 198px;
+  position: absolute;
+  right: 41px;
+  left: 730px;
+  top: -5px;
+}
+.link2 {
+  height: 29px;
+  position: absolute;
+  right: -20px;
+  left: 0px;
+  top: 0px;
+}
+.the-collection {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24.578125px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 171.42px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.list2 {
+  height: 171px;
+  position: absolute;
+  right: 8px;
+  left: 0px;
+  top: 33px;
+}
+.item-link9 {
+  width: 163.63px;
+  height: 28.63px;
+  position: absolute;
+  left: 1px;
+  top: 0.38px;
+}
+.cosmograph-daytona {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 163.83px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link10 {
+  width: 70.5px;
+  height: 28.63px;
+  position: absolute;
+  left: 1px;
+  top: 29px;
+}
+.day-date {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.625px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: -0.2px;
+  top: -3.48px;
+  width: 70.7px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link11 {
+  width: 106px;
+  height: 39px;
+  position: absolute;
+  left: -7px;
+  top: 86px;
+}
+.sky-dweller {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 7.8px;
+  top: 14.77px;
+  width: 90.53px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.gmt-master-ii {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 1px;
+  top: 50px;
+  width: 106.47px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link12 {
+  width: 66.03px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 257.63px;
+}
+.deepsea {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 1px;
+  top: 74px;
+  width: 66.23px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link13 {
+  width: 37.91px;
+  height: 28.63px;
+  position: absolute;
+  left: -12px;
+  top: 142.38px;
+}
+._1908 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 1px;
+  top: 125px;
+  width: 38.11px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item3 {
+  height: 172px;
+  position: absolute;
+  right: 393px;
+  left: 353px;
+  top: 0px;
+}
+.rolex-and-sports {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24.984375px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 204.98px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.list3 {
+  height: 143.13px;
+  position: absolute;
+  right: 7.8px;
+  left: 0px;
+  top: 28.62px;
+}
+.item-link14 {
+  width: 48.7px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.tennis {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 48.9px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link15 {
+  width: 32.23px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 28.63px;
+}
+.golf {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 32.43px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link16 {
+  width: 65.52px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 57.25px;
+}
+.yachting {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 65.72px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link17 {
+  width: 87.95px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 85.88px;
+}
+.motor-sport {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 88.15px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link18 {
+  width: 107.3px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 114.5px;
+}
+.equestrianism {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 107.5px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item4 {
+  height: 122px;
+  position: absolute;
+  right: 385px;
+  left: 353px;
+  top: 226px;
+}
+.list4 {
+  height: 85.88px;
+  position: absolute;
+  right: 7.8px;
+  left: 0px;
+  top: 28.62px;
+}
+.item-link19 {
+  width: 98.2px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.store-locator {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 98.4px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link20 {
+  width: 113.3px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 28.63px;
+}
+.buying-a-rolex {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 113.5px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link21 {
+  width: 202.09px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 57.25px;
+}
+.rolex-certified-pre-owned {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 202.29px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.link3 {
+  height: 29px;
+  position: absolute;
+  right: 430px;
+  left: 352px;
+  top: 212px;
+}
+.buying-a-rolex2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 25.1875px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 180.31px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.futer-1 {
+  background: #ffffff;
+  height: 92px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 4308px;
+  overflow: auto;
+}
+.div5 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15.5px;
+  line-height: 22px;
+  font-weight: 700;
+  position: absolute;
+  left: 101px;
+  top: 34.48px;
+  width: 97px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.list5 {
+  width: 110px;
+  height: 24px;
+  position: absolute;
+  left: 214px;
+  top: 34px;
+}
+.item-link-share-this-page-via-threads-open-in-popin {
+  width: 32px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.img2 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  overflow: visible;
+}
+.item-link-share-this-page-via-facebook-open-in-popin {
+  width: 32px;
+  height: 40px;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.img3 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  overflow: visible;
+}
+.img4 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 88.25px;
+  top: 5.98px;
+  overflow: visible;
+}
+.figure-picture-rolex-com-footer-rolex-org-push-cc-69-1587746 {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 4894px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.item-2 {
+  width: 100%;
+  height: 11.72%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 19.08%;
+  top: 69.2%;
+  overflow: hidden;
+}
+.figure-picture-collection-rolex-watches-day-date-m-228235-0055-10150-rsa-cad-24-everose-carrousel-24 {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.heading-2-day-date {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.0703125px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 113px;
+  top: 389px;
+  width: 218.15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div6 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 113px;
+  top: 449px;
+  width: 602.61px;
+  height: 84.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-1 {
+  width: 1289px;
+  position: absolute;
+  left: 0px;
+  bottom: 1640px;
+  top: 3060px;
+  overflow: hidden;
+}
+.figure-picture-collection-rolex-watches-gmt-master-ii-m-126710-grnr-0004-10149-rsa-topolino-oyster-carrousel-24 {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.heading-2-gmt-master-ii {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 46.484375px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 87px;
+  top: 387px;
+  width: 326.36px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div7 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 29.53125px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 87px;
+  top: 460px;
+  width: 458px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aside-2 {
+  width: 1289px;
+  position: absolute;
+  left: 0px;
+  bottom: 2600px;
+  top: 2021px;
+  overflow: hidden;
+}
+.figure-picture-rolex-retailers-buying-a-rolex-hub-buying-a-rolex-watch-push {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.heading-2-how-to-buy-a-new-rolex {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48.046875px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 106px;
+  top: 383px;
+  width: 598px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rolex-rolex {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 106px;
+  top: 468px;
+  width: 789.09px;
+  height: 164.04px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aside {
+  position: absolute;
+  right: 119px;
+  left: 119px;
+  bottom: 3430px;
+  top: 1295px;
+  overflow: hidden;
+}
+.figure-picture-rolex-retailers-buying-a-rolex-hub-buying-a-rolex-watch-store-locator-push-boutiquerolex-1 {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.heading-2-store-locator {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48.046875px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 67px;
+  top: 350px;
+  width: 558px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rolex {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 67px;
+  top: 437px;
+  width: 831.95px;
+  height: 124.03px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section {
+  width: 1289px;
+  position: absolute;
+  left: 0px;
+  bottom: 4125px;
+  top: 785px;
+}
+.heading-2 {
+  position: absolute;
+  right: 761px;
+  left: 65px;
+  bottom: 0px;
+  top: 0px;
+}
+.rolex2 {
+  background: linear-gradient(
+    137.9deg,
+    rgba(16, 99, 61, 1) 0%,
+    rgba(26, 145, 90, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.265625px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 479px;
+  height: 333px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rolex-rolex2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 622px;
+  top: 114px;
+  width: 647.15px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rolex-rolex3 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  position: absolute;
+  left: 622px;
+  top: 229px;
+  width: 584px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header {
+  width: 1289px;
+  height: 594px;
+  position: absolute;
+  left: 0px;
+  top: 161px;
+  overflow: hidden;
+}
+.figure {
+  background: #000000;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+}
+.picture-rolex-retailers-buying-a-rolex-hub-buying-a-rolex-watch-cover-m-126603-0001-1909-ad-004 {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.div8 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 386px;
+  width: 418.08px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading-1-buying-a-rolex {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 96.9732437133789px;
+  line-height: 94.91px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 191px;
+  width: 971px;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

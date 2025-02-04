@@ -8,6 +8,38 @@
   position: relative;
   overflow: hidden;
 }
+.search-container {
+  position: relative; /* Для коректного позиціонування поля введення */
+  display: inline-block;
+}
+
+.search-input {
+  position: absolute;
+  top: 100%; /* Поле з’явиться прямо під кнопкою */
+  left: 0;
+  width: 180px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none; /* Початково приховане */
+  background: white;
+}
+
+.item-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.item-button:hover {
+  background-color: #e0e0e0;
+}
+
 .figure-picture-rolex-com-footer-rolex-org-push-cc-69-1587746 {
   position: absolute;
   right: 0px;

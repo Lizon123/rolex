@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./vars.css">
   <link rel="stylesheet" href="./styles.css">
+  <script src="script.js"></script>
   
   
   <style>
@@ -75,10 +76,14 @@
           <img class="vector13" src="img/vector12.svg" />
         </div>
       </div>
-      <div class="item-button">
-        <img class="svg3" src="img/svg2.svg" />
-        <div class="div3">Пошук</div>
-      </div>
+      <div class="search-container">
+        <div class="item-button" onclick="toggleSearchInput()">
+            <img class="svg3" src="img/svg2.svg" />
+            <div class="div3">Пошук</div>
+        </div>
+        <input type="text" class="search-input" placeholder="Введіть запит..." />
+    </div>
+    
       <div class="item-link20">
         <div class="div4">Локація</div>
         <img class="vector14" src="img/vector13.svg" />
@@ -363,6 +368,7 @@
       />
       <div class="watches">
         <div class="div17">Колекція</div>
+        <div id="message-container" style="display: none; background-color: #f8d7da; color: #721c24; padding: 10px; margin-bottom: 10px; border: 1px solid #f5c6cb; border-radius: 5px;"></div>
       </div>
       <div class="heading-1-rolex-watches">Годинник Rolex</div>
     </div>

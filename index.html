@@ -77,13 +77,10 @@
         </div>
       </div>
       <div class="search-container">
-        <div class="item-button" onclick="toggleSearchInput()">
-            <img class="svg3" src="img/svg2.svg" />
-            <div class="div3">Пошук</div>
-        </div>
-        <input type="text" class="search-input" placeholder="Введіть запит..." />
+        <input type="text" id="search-input" placeholder="Введіть запит..." oninput="searchRolex()">
+        <button id="search-button">🔍 Пошук</button>
+        <p id="search-result"></p>
     </div>
-    
       <div class="item-link20">
         <div class="div4">Локація</div>
         <img class="vector14" src="img/vector13.svg" />

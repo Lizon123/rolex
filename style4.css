@@ -983,7 +983,7 @@
   left: 214px;
   top: 34px;
 }
-.item-link-share-this-page-via-threads-open-in-popin {
+.threads {
   width: 32px;
   height: 40px;
   position: absolute;
@@ -999,7 +999,7 @@
   top: 10px;
   overflow: visible;
 }
-.item-link-share-this-page-via-facebook-open-in-popin {
+.facebook {
   width: 32px;
   height: 40px;
   position: absolute;
@@ -1023,7 +1023,7 @@
   top: 2px;
   overflow: visible;
 }
-.figure-picture-rolex-com-footer-rolex-org-push-cc-69-1587746 {
+.footer-1 {
   position: absolute;
   right: 0px;
   left: 0px;
@@ -1042,7 +1042,7 @@
   top: 69.2%;
   overflow: hidden;
 }
-.figure-picture-collection-rolex-watches-day-date-m-228235-0055-10150-rsa-cad-24-everose-carrousel-24 {
+.day-date {
   position: absolute;
   right: 0px;
   left: 0px;
@@ -1091,7 +1091,7 @@
   top: 3060px;
   overflow: hidden;
 }
-.figure-picture-collection-rolex-watches-gmt-master-ii-m-126710-grnr-0004-10149-rsa-topolino-oyster-carrousel-24 {
+.gmt-master {
   position: absolute;
   right: 0px;
   left: 0px;
@@ -1140,7 +1140,7 @@
   top: 2021px;
   overflow: hidden;
 }
-.figure-picture-rolex-retailers-buying-a-rolex-hub-buying-a-rolex-watch-push {
+.buying {
   position: absolute;
   right: 0px;
   left: 0px;
@@ -1189,7 +1189,7 @@
   top: 1295px;
   overflow: hidden;
 }
-.figure-picture-rolex-retailers-buying-a-rolex-hub-buying-a-rolex-watch-store-locator-push-boutiquerolex-1 {
+.retailers {
   position: absolute;
   right: 0px;
   left: 0px;
@@ -1314,7 +1314,7 @@
   bottom: 0px;
   top: 0px;
 }
-.picture-rolex-retailers-buying-a-rolex-hub-buying-a-rolex-watch-cover-m-126603-0001-1909-ad-004 {
+.buying-a-rolex {
   position: absolute;
   right: 0px;
   left: 0px;

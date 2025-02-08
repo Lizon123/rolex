@@ -1,758 +1,258 @@
-.mac-book-air-1,
-.mac-book-air-1 * {
-  box-sizing: border-box;
+/* Основні стилі */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
-.mac-book-air-1 {
-  background: #ffffff;
-  height: 9762px;
+
+/* Стилі для хедера */
+header {
+  background: linear-gradient(90deg,
+          rgba(11, 62, 39, 1) 0%,
+          rgba(25, 113, 73, 1) 100%);
+  color: white;
+  padding: 25px 20px;
+  height: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Бургер-меню */
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed; /* Важливо: позиціювання fixed для переднього плану */
+  top: 20px;
+  left: 20px;
+  z-index: 3000; /* Високий z-index для бургер-меню */
+}
+
+.burger-menu span {
+  background: white;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  transition: 0.3s ease; /* Плавний перехід */
+}
+
+/* Активний стан бургер-меню */
+.burger-menu.active {
+  z-index: 3000; /* Бургер-меню залишається на передньому плані */
+}
+
+.burger-menu.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+  opacity: 1;
+}
+
+.burger-menu.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Фон меню (overlay) */
+.menu-overlay {
+  position: fixed; /* Накладання на весь екран */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(18, 78, 53, 1) 0%, rgba(34, 152, 90, 1) 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  z-index: 2500; /* Вище контенту, але нижче бургер-меню */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Відкриття меню */
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Центрування тексту в меню */
+.nav-menu {
+  text-align: center;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.menu-overlay.active .nav-menu {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Список меню */
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu ul li {
+  margin: 20px 0;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Декоративні ефекти для меню */
+.nav-menu ul li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #ffcc00;
+  margin: 0 auto;
+  transition: width 0.3s ease;
+}
+
+.nav-menu ul li a:hover::before {
+  width: 50%;
+}
+
+/* Бургер-меню */
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed; /* Завжди на одному місці */
+  top: 20px;
+  left: 20px; /* Розташування зліва */
+  z-index: 3000; /* Вище меню */
+}
+
+.burger-menu span {
+  background: white;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Анімація бургер-меню */
+.burger-menu.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .nav-menu ul li a {
+    font-size: 22px;
+  }
+
+  .burger-menu {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+
+.watch-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.watch-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   position: relative;
-  overflow: hidden;
-}
-.figure-picture-rolex-com-footer-rolex-org-push-cc-69-1587746 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 9327px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.futer-2 {
-  background: #f8f8f8;
-  height: 501px;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 8826px;
-}
-.section-svg {
-  width: 87.28px;
-  height: 50px;
-  position: absolute;
-  left: 68px;
-  top: 46px;
-}
-.vector {
-  width: 27.39%;
-  height: 52.03%;
-  position: absolute;
-  right: 36.02%;
-  left: 36.59%;
-  bottom: 46.78%;
-  top: 1.19%;
-  overflow: visible;
-}
-.group {
-  width: 98.54%;
-  height: 31.18%;
-  position: absolute;
-  right: 0.58%;
-  left: 0.87%;
-  bottom: 3.22%;
-  top: 65.59%;
-  overflow: visible;
-}
-.nav-list {
-  height: 384px;
-  position: absolute;
-  right: 56px;
-  left: 271px;
-  top: 87px;
-}
-.item {
-  height: 200px;
-  position: absolute;
-  right: 770px;
-  left: 0px;
-  top: 0px;
-}
-.link {
-  height: 28.63px;
-  position: absolute;
-  right: 7.8px;
-  left: 0px;
-  top: 0px;
-}
-.rolex-watches {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24.78125px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 176.87px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.list {
-  height: 171.75px;
-  position: absolute;
-  right: 7.8px;
-  left: 0px;
-  top: 28.62px;
-}
-.item-link {
-  width: 145.39px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.new-watches-2024 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 145.59px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link2 {
-  width: 117.05px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 28.63px;
-}
-.find-your-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 117.25px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link3 {
-  width: 159.39px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 57.25px;
-}
-.configure-your-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 159.59px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link4 {
-  width: 111.73px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 85.88px;
-}
-.men-s-watches {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 111.93px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link5 {
-  width: 135.78px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 114.5px;
-}
-.women-s-watches {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 135.98px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link6 {
-  width: 103.14px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 143.13px;
-}
-.gold-watches {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 103.34px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item2 {
-  height: 198px;
-  position: absolute;
-  right: 41px;
-  left: 730px;
-  top: -5px;
-}
-.link2 {
-  height: 29px;
-  position: absolute;
-  right: -20px;
-  left: 0px;
-  top: 0px;
-}
-.the-collection {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24.578125px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 171.42px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.list2 {
-  height: 171px;
-  position: absolute;
-  right: 8px;
-  left: 0px;
-  top: 33px;
-}
-.item-link7 {
-  width: 163.63px;
-  height: 28.63px;
-  position: absolute;
-  left: 1px;
-  top: 0.38px;
-}
-.cosmograph-daytona {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 163.83px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link8 {
-  width: 70.5px;
-  height: 28.63px;
-  position: absolute;
-  left: 1px;
-  top: 29px;
-}
-.day-date {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.625px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: -0.2px;
-  top: -3.48px;
-  width: 70.7px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link9 {
-  width: 106px;
-  height: 39px;
-  position: absolute;
-  left: -7px;
-  top: 86px;
-}
-.sky-dweller {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 7.8px;
-  top: 14.77px;
-  width: 90.53px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.gmt-master-ii {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1px;
-  top: 50px;
-  width: 106.47px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link10 {
-  width: 66.03px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 257.63px;
-}
-.deepsea {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1px;
-  top: 74px;
-  width: 66.23px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link11 {
-  width: 37.91px;
-  height: 28.63px;
-  position: absolute;
-  left: -12px;
-  top: 142.38px;
-}
-._1908 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1px;
-  top: 125px;
-  width: 38.11px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item3 {
-  height: 172px;
-  position: absolute;
-  right: 393px;
-  left: 353px;
-  top: 0px;
-}
-.rolex-and-sports {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24.984375px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 204.98px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.list3 {
-  height: 143.13px;
-  position: absolute;
-  right: 7.8px;
-  left: 0px;
-  top: 28.62px;
-}
-.item-link12 {
-  width: 48.7px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.tennis {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 48.9px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link13 {
-  width: 32.23px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 28.63px;
-}
-.golf {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 32.43px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link14 {
-  width: 65.52px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 57.25px;
-}
-.yachting {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 65.72px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link15 {
-  width: 87.95px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 85.88px;
-}
-.motor-sport {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 88.15px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link16 {
-  width: 107.3px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 114.5px;
-}
-.equestrianism {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 107.5px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item4 {
-  height: 122px;
-  position: absolute;
-  right: 385px;
-  left: 353px;
-  top: 226px;
-}
-.list4 {
-  height: 85.88px;
-  position: absolute;
-  right: 7.8px;
-  left: 0px;
-  top: 28.62px;
-}
-.item-link17 {
-  width: 98.2px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.store-locator {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 98.4px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link18 {
-  width: 113.3px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 28.63px;
-}
-.buying-a-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 113.5px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link19 {
-  width: 202.09px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 57.25px;
-}
-.rolex-certified-pre-owned {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 202.29px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link3 {
-  height: 29px;
-  position: absolute;
-  right: 430px;
-  left: 352px;
-  top: 212px;
-}
-.buying-a-rolex2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 25.1875px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 180.31px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.futer-1 {
-  background: #ffffff;
-  height: 92px;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 8734px;
-  overflow: auto;
-}
-.div {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15.5px;
-  line-height: 22px;
-  font-weight: 700;
-  position: absolute;
-  left: 101px;
-  top: 34.48px;
-  width: 97px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.list5 {
-  width: 232px;
-  height: 24px;
-  position: absolute;
-  left: 213.75px;
-  top: 34px;
-}
-.item-link-share-this-page-via-threads-open-in-popin {
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  translate: 0 -50%;
-}
-.img {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-.item-link-share-this-page-via-facebook-open-in-popin {
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  translate: 0 -50%;
-}
-.img2 {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-.item-link-share-this-page-via-pinterest-open-in-popin {
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  left: 160px;
-  top: 50%;
-  translate: 0 -50%;
-}
-.img3 {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 88.25px;
-  top: 2px;
-  overflow: visible;
-}
-.background {
-  background: linear-gradient(
-    90deg,
-    rgba(11, 62, 39, 1) 0%,
-    rgba(25, 113, 73, 1) 100%
-  );
-  width: 1289px;
-  height: 111px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.list-item-button {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.watch-item.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.watch-item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.watch-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.watch-description {
+  font-size: 1em;
+  color: #666;
+}
+
+
+
+
+
+.menu {
   width: 102px;
   height: 36px;
   position: absolute;
   left: 92px;
   top: 38px;
 }
-.div2 {
+
+.menut {
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -768,7 +268,8 @@
   align-items: center;
   justify-content: flex-start;
 }
-.svg {
+
+.menup {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -776,160 +277,27 @@
   top: 10px;
   overflow: visible;
 }
-.figure-link-go-to-home-page {
+
+.logo {
+
   width: 52.9px;
   height: 56px;
   position: absolute;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
+
 }
-.svg2 {
-  width: 36.9px;
-  height: 40px;
-  position: absolute;
-  left: 50%;
-  translate: -50% -50%;
-  top: 50%;
-}
-.vector2 {
-  width: 98.57%;
-  height: 98.17%;
-  position: absolute;
-  right: 0.65%;
-  left: 0.77%;
-  bottom: 0.86%;
-  top: 0.97%;
-  overflow: visible;
-}
-.vector3 {
-  width: 98.57%;
-  height: 97.97%;
-  position: absolute;
-  right: 0.47%;
-  left: 0.95%;
-  bottom: 1.22%;
-  top: 0.81%;
-  overflow: visible;
-}
-.vector4 {
-  width: 98.57%;
-  height: 98.17%;
-  position: absolute;
-  right: 0.65%;
-  left: 0.77%;
-  bottom: 0.86%;
-  top: 0.97%;
-  overflow: visible;
-}
-.vector5 {
-  width: 98.57%;
-  height: 98.17%;
-  position: absolute;
-  right: 0.65%;
-  left: 0.77%;
-  bottom: 0.86%;
-  top: 0.97%;
-  overflow: visible;
-}
-.vector6 {
-  width: 11.74%;
-  height: 10.83%;
-  position: absolute;
-  right: 87.38%;
-  left: 0.88%;
-  bottom: 64.96%;
-  top: 24.21%;
-  overflow: visible;
-}
-.vector7 {
-  width: 13.3%;
-  height: 12.26%;
-  position: absolute;
-  right: 67.09%;
-  left: 19.61%;
-  bottom: 80.03%;
-  top: 7.72%;
-  overflow: visible;
-}
-.vector8 {
-  width: 12.31%;
-  height: 12.27%;
-  position: absolute;
-  right: 44.06%;
-  left: 43.63%;
-  bottom: 86.71%;
-  top: 1.03%;
-  overflow: visible;
-}
-.vector9 {
-  width: 13.43%;
-  height: 12.84%;
-  position: absolute;
-  right: 19.93%;
-  left: 66.64%;
-  bottom: 79.35%;
-  top: 7.81%;
-  overflow: visible;
-}
-.vector10 {
-  width: 13.13%;
-  height: 12.24%;
-  position: absolute;
-  right: 0.73%;
-  left: 86.13%;
-  bottom: 63.61%;
-  top: 24.16%;
-  overflow: visible;
-}
-.group2 {
-  width: 88.36%;
-  height: 91.72%;
-  position: absolute;
-  right: 1.3%;
-  left: 10.34%;
-  bottom: 2.6%;
-  top: 5.68%;
-  overflow: visible;
-}
-.vector11 {
-  width: 66.86%;
-  height: 66.4%;
-  position: absolute;
-  right: 31.21%;
-  left: 1.93%;
-  bottom: 0.53%;
-  top: 33.08%;
-  overflow: visible;
-}
-.vector12 {
-  width: 27.07%;
-  height: 4.31%;
-  position: absolute;
-  right: 31.23%;
-  left: 41.7%;
-  bottom: 1.81%;
-  top: 93.88%;
-  overflow: visible;
-}
-.vector13 {
-  width: 32.54%;
-  height: 8.39%;
-  position: absolute;
-  right: 34.41%;
-  left: 33.05%;
-  bottom: 14.93%;
-  top: 76.68%;
-  overflow: visible;
-}
-.item-button {
+
+.poshyk {
   width: 95.64px;
   height: 38px;
   position: absolute;
   left: 816px;
   top: 38px;
 }
-.svg3 {
+
+.poshykp {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -937,7 +305,8 @@
   top: 10px;
   overflow: visible;
 }
-.div3 {
+
+.poshykt {
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -953,14 +322,16 @@
   align-items: center;
   justify-content: flex-start;
 }
-.item-link20 {
+
+.lokacia {
   height: 38px;
   position: absolute;
   right: 210px;
   left: 958px;
   top: 38px;
 }
-.div4 {
+
+.lokaciat {
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -976,24 +347,31 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector14 {
-  width: 11.99%;
-  height: 47.37%;
+
+.lokaciap {
+  width: 18px;
+  height: 18px;
   position: absolute;
-  right: 70.66%;
-  left: 17.36%;
+  left: 24px;
   bottom: 26.32%;
   top: 26.32%;
   overflow: visible;
 }
-.item-link21 {
+
+.like {
   height: 38px;
   position: absolute;
   right: 47px;
   left: 1125px;
   top: 38px;
 }
-.div5 {
+
+img{
+  width: 100%;
+}
+
+
+.liket {
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -1009,7 +387,8 @@
   align-items: center;
   justify-content: flex-start;
 }
-.img4 {
+
+.likep {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -1017,847 +396,21 @@
   top: 9.01px;
   overflow: visible;
 }
-.section {
-  width: 1290px;
-  position: absolute;
-  left: -1px;
-  bottom: 8504px;
-  top: 743px;
-}
-.heading-2-explore-the-rolex-collection {
-  background: linear-gradient(
-    120.55deg,
-    rgba(16, 99, 61, 1) 0%,
-    rgba(26, 145, 90, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 48.046875px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 86px;
-  top: 103px;
-  width: 443px;
-  height: 239px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.text {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
-  left: 1035px;
-  top: 72.87px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.rolex-1910-rolex-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 20px;
-  line-height: 55px;
-  font-weight: 300;
-  position: absolute;
-  left: 529px;
-  top: 39px;
-  width: 699px;
-  height: 439px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-12 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 1028px;
-  top: 8110px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-sky-dweller-m-336935-0008-10152-rsa-cap-everose-42-carrousel-24-19-02-2024 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-sky-dweller {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.265625px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 100px;
-  top: 424px;
-  width: 285.26px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div6 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.6484375px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 100px;
-  top: 506px;
-  width: 431.4px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-sky-dweller {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.img5 {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 116.18px;
-  top: 13px;
-}
-.vector15 {
-  width: 5.74%;
-  height: 32.9%;
-  position: absolute;
-  right: 93.96%;
-  left: 0.3%;
-  bottom: 34.68%;
-  top: 32.42%;
-  overflow: visible;
-}
-.item-11 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 1652px;
-  top: 7486px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-lady-datejust-m-279135-rbr-0001-10160-rsa-ladydatejust-28-m-279135-rbr-0001-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-lady-datejust {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.0703125px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 106px;
-  top: 431px;
-  width: 328.56px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div7 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.8828125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 106px;
-  top: 517px;
-  width: 422.61px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-lady-datejust {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.vector16 {
-  width: 5.74%;
-  height: 32.9%;
-  position: absolute;
-  right: 93.96%;
-  left: 0.3%;
-  bottom: 34.68%;
-  top: 32.42%;
-  overflow: visible;
-}
-.item-10 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 2276px;
-  top: 6862px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-air-king-m-126900-0001-10155-rsa-airking-40-m-126900-0001-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-air-king {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 46.6796875px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 91px;
-  top: 410px;
-  width: 193.36px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div8 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.8828125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 91px;
-  top: 470px;
-  width: 626.88px;
-  height: 84.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-air-king {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.vector17 {
-  width: 5.74%;
-  height: 32.9%;
-  position: absolute;
-  right: 93.96%;
-  left: 0.3%;
-  bottom: 49.68%;
-  top: 17.42%;
-  overflow: visible;
-}
-.item-9 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 2900px;
-  top: 6238px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-deepsea-m-136668-lb-0001-10153-rsa-caraibes-44-carrousel-24-ab {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-deepsea {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 48.046875px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 86px;
-  top: 396px;
-  width: 207.06px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div9 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 86px;
-  top: 479px;
-  width: 555px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-more {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.img6 {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 0.41px;
-  top: 12.97px;
-  overflow: visible;
-}
-.item-8 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 3518px;
-  top: 5620px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-sea-dweller-10158-rsa-seadweller-43-m-126603-0001-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-sea-dweller {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.4609375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 89px;
-  top: 404px;
-  width: 285.86px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div10 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.6484375px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 89px;
-  top: 487px;
-  width: 443px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-sea-dweller {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.img7 {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 0.41px;
-  top: 12.97px;
-  overflow: visible;
-}
-.item-7 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 4142px;
-  top: 4996px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-yacht-master-m-226627-0001-10154-rsa-yachtmaster-42-m-226627-0001-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-yacht-master {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 45.8984375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 83px;
-  top: 383px;
-  width: 308.2px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div11 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 83px;
-  top: 470px;
-  width: 508.05px;
-  height: 84.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-yacht-master {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.img8 {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 0.41px;
-  top: 12.97px;
-  overflow: visible;
-}
-.item-6 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 4766px;
-  top: 4372px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-oyster-perpetual-m-124300-0001-10159-rsa-oysterperpetual-41-m-124300-0001-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-}
-.rolex {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 81px;
-  top: 479px;
-  width: 311.64px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.heading-2-oyster-perpetual {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.265625px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 81px;
-  top: 400px;
-  width: 393.31px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-5 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 5384px;
-  top: 3754px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-cosmograph-daytona-m-126509-0001-10168-rsa-daytona-40-m-126509-0001-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-cosmograph-daytona {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.4609375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 84px;
-  top: 432px;
-  width: 504.81px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div12 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 84px;
-  top: 514px;
-  width: 622.53px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-cosmograph-daytona {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.vector18 {
-  width: 5.74%;
-  height: 32.9%;
-  position: absolute;
-  right: 93.96%;
-  left: 0.3%;
-  bottom: 34.68%;
-  top: 32.42%;
-  overflow: visible;
-}
-.item-4 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 6008px;
-  top: 3130px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-day-date-m-228235-0055-10150-rsa-cad-24-everose-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-day-date {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.0703125px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 90px;
-  top: 406px;
-  width: 218.15px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div13 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 90px;
-  top: 466px;
-  width: 602.61px;
-  height: 84.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-day-date {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.img9 {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 0.41px;
-  top: 12.97px;
-  overflow: visible;
-}
-.item-3 {
-  width: 1290px;
-  position: absolute;
-  left: 0px;
-  bottom: 6632px;
-  top: 2506px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-gmt-master-ii-m-126710-grnr-0004-10149-rsa-topolino-oyster-carrousel-24 {
-  height: auto;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: visible;
-}
-.heading-2-gmt-master-ii {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 46.484375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 88px;
-  top: 392px;
-  width: 326.36px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div14 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.53125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 88px;
-  top: 484px;
-  width: 512px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-gmt-master-ii {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.img10 {
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 0.41px;
-  top: 25.97px;
-}
-.item-2 {
-  width: 1290px;
-  position: absolute;
-  left: 0px;
-  bottom: 7256px;
-  top: 1882px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-submariner-m-124060-0001-10156-rsa-submariner-41-m-124060-0001-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-submariner {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.4609375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 87px;
-  top: 419px;
-  width: 271.95px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div15 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 87px;
-  top: 501px;
-  width: 575px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link-discover-submariner {
-  width: 138.17px;
-  height: 40px;
-  position: absolute;
-  left: 153.59px;
-  top: 617.53px;
-}
-.vector19 {
-  width: 5.74%;
-  height: 32.9%;
-  position: absolute;
-  right: 93.96%;
-  left: 0.3%;
-  bottom: 34.68%;
-  top: 32.42%;
-  overflow: visible;
-}
-.item-1 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 7880px;
-  top: 1258px;
-  overflow: hidden;
-}
-.figure-picture-collection-rolex-watches-datejust-m-126234-0051-10161-rsa-datejust-31-m-278274-0018-carrousel-24 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-datejust {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.265625px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 82px;
-  top: 424px;
-  width: 195.45px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div16 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.8828125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 82px;
-  top: 503px;
-  width: 489.81px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.header {
-  width: 1289px;
+
+.history {
+  width: 100%;
   height: 545px;
   position: absolute;
   left: 0px;
   top: 194px;
   overflow: hidden;
 }
-.picture-rolex-watches-collection-hub-cover-autoplay-posterframe {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
+
+.historyp {
+
 }
-.watches {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
-  overflow: hidden;
-}
-.div17 {
+
+.historyt1 {
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
@@ -1875,7 +428,8 @@
   align-items: center;
   justify-content: center;
 }
-.heading-1-rolex-watches {
+
+.historyt2 {
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Bold", sans-serif;
@@ -1892,100 +446,1395 @@
   align-items: center;
   justify-content: center;
 }
-nav {
-  background-color: #1E1E23;
-  height: 65px;
-}
 
-
-#menuToggle {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 25px;
-  left: 25px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: flex;
-  width: 40px;
-  height: 32px;
+.text {
+  width: 100%;
   position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
+  left: -1px;
+  bottom: 8504px;
+  top: 743px;
 }
 
-#menuToggle span
-{
+.textsmall {
+  background: linear-gradient(120.55deg,
+          rgba(16, 99, 61, 1) 0%,
+          rgba(26, 145, 90, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48.046875px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 86px;
+  top: 103px;
+  width: 443px;
+  height: 239px;
   display: flex;
-  width: 29px;
-  height: 2px;
-  margin-bottom: 5px;
-  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.textbig {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 20px;
+  line-height: 55px;
+  font-weight: 300;
+  position: absolute;
+  left: 529px;
+  top: 39px;
+  width: 699px;
+  height: 439px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.datejust {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  height: 624px;
+  top: 1258px;
+  overflow: hidden;
+}
+
+.datejustp {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.datejust1 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.265625px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 82px;
+  top: 424px;
+  width: 195.45px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.datejust2 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 29.8828125px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 82px;
+  top: 503px;
+  width: 489.81px;
+  height: 40.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.submariner {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 7256px;
+  height: 624px;
+  top: 1882px;
+  overflow: hidden;
+}
+
+.submarinerp {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.submariner1 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.4609375px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 87px;
+  top: 419px;
+  width: 271.95px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.submariner2 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 87px;
+  top: 501px;
+  width: 575px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gmt-master-ii {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 6632px;
+  height: 624px;
+  top: 2506px;
+  overflow: hidden;
+}
+
+.gmt-master-iip {
+  height: auto;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: visible;
+}
+
+.gmt-master-ii1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 46.484375px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 88px;
+  top: 392px;
+  width: 326.36px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gmt-master-ii2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 29.53125px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 88px;
+  top: 484px;
+  width: 512px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.day-date {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 6008px;
+  height: 624px;
+  top: 3130px;
+  overflow: hidden;
+}
+
+.day-datep {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.day-date1 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.0703125px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 90px;
+  top: 406px;
+  width: 218.15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.day-date2 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 90px;
+  top: 466px;
+  width: 602.61px;
+  height: 84.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cosmograph-daytona {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 5384px;
+  height: 624px;
+  top: 3754px;
+  overflow: hidden;
+}
+
+.cosmograph-daytonap {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.cosmograph-daytona1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.4609375px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 84px;
+  top: 432px;
+  width: 504.81px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cosmograph-daytona2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 84px;
+  top: 514px;
+  width: 622.53px;
+  height: 40.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.yacht-master {
+  width: 100%;
+  height: 624px;
+  position: absolute;
+  left: 0px;
+  bottom: 4766px;
+  top: 4372px;
+  overflow: hidden;
+}
+
+.yacht-masterp {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.yacht-master1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 45.8984375px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 83px;
+  top: 383px;
+  width: 308.2px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.yacht-master2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 83px;
+  top: 470px;
+  width: 508.05px;
+  height: 84.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sea-dweller {
+  width: 100%;
+  height: 624px;
+  position: absolute;
+  left: 0px;
+  bottom: 4142px;
+  top: 4996px;
+  overflow: hidden;
+}
+
+.sea-dwellerp {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.sea-dweller1 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.4609375px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 89px;
+  top: 404px;
+  width: 285.86px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sea-dweller2 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 29.6484375px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 89px;
+  top: 487px;
+  width: 443px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.deepsea {
+  width: 100%;
+  height: 624px;
+  position: absolute;
+  left: 0px;
+  bottom: 3518px;
+  top: 5620px;
+  overflow: hidden;
+}
+
+.deepseap {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.deepsea1 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48.046875px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 86px;
+  top: 396px;
+  width: 207.06px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.deepsea2 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 86px;
+  top: 479px;
+  width: 555px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.air-king {
+  width: 100%;
+  height: 624px;
+  position: absolute;
+  left: 0px;
+  bottom: 2900px;
+  top: 6238px;
+  overflow: hidden;
+}
+
+.air-kingp {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.air-king1 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 46.6796875px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 91px;
+  top: 410px;
+  width: 193.36px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.air-king2 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 29.8828125px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 91px;
+  top: 470px;
+  width: 626.88px;
+  height: 84.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.lady-datejust {
+  width: 100%;
+  height: 624px;
+  position: absolute;
+  left: 0px;
+  bottom: 2276px;
+  top: 6862px;
+  overflow: hidden;
+}
+
+.lady-datejustp {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.lady-datejust1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.0703125px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 106px;
+  top: 431px;
+  width: 328.56px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.lady-datejust2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 29.8828125px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 106px;
+  top: 517px;
+  width: 422.61px;
+  height: 40.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sky-dweller {
+  width: 100%;
+  height: 624px;
+  position: absolute;
+  left: 0px;
+  bottom: 1652px;
+  top: 7486px;
+  overflow: hidden;
+}
+
+.sky-dwellerp {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.sky-dweller1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47.265625px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 100px;
+  top: 424px;
+  width: 285.26px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sky-dweller2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 29.6484375px;
+  line-height: 40.02px;
+  font-weight: 300;
+  position: absolute;
+  left: 100px;
+  top: 506px;
+  width: 431.4px;
+  height: 40.02px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.futer-1 {
   background: #ffffff;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 5px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383F;
-}
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu
-{
+  height: 92px;
   position: absolute;
-  width: 180px;
-  height: 400px;
-  box-shadow: 0 0 10px #85888C;
-  margin: -50px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background-color: #F5F6FA;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  right: 0px;
+  left: 0px;
+  top: 8110px;
+  overflow: auto;
 }
 
-#menu li
-{
-  padding: 10px 0;
-  transition-delay: 2s;
+.share {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15.5px;
+  line-height: 22px;
+  font-weight: 700;
+  position: absolute;
+  left: 101px;
+  top: 34.48px;
+  width: 97px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+.program {
+  width: 232px;
+  height: 24px;
+  position: absolute;
+  left: 213.75px;
+  top: 34px;
+}
+
+.pinterest {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  overflow: visible;
+}
+
+.facebook {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 44px;
+  top: 10px;
+  overflow: visible;
+}
+
+.threads {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+  overflow: visible;
+}
+
+.futer-2 {
+  background: #f8f8f8;
+  height: 501px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 8202px;
+}
+
+.logof {
+  width: 87.28px;
+  height: 50px;
+  position: absolute;
+  left: 68px;
+  top: 46px;
+}
+
+.logof1 {
+  width: 27.39%;
+  height: 52.03%;
+  position: absolute;
+  right: 36.02%;
+  left: 36.59%;
+  bottom: 46.78%;
+  top: 1.19%;
+  overflow: visible;
+}
+
+.logof2 {
+  width: 98.54%;
+  height: 31.18%;
+  position: absolute;
+  right: 0.58%;
+  left: 0.87%;
+  bottom: 3.22%;
+  top: 65.59%;
+  overflow: visible;
+}
+
+.futert {
+  height: 384px;
+  position: absolute;
+  right: 56px;
+  left: 271px;
+  top: 87px;
+}
+
+.rolex-watches {
+  height: 200px;
+  position: absolute;
+  right: 770px;
+  left: 0px;
+  top: 0px;
+}
+
+.rolex-watches1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24.78125px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 176.87px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rolex-watches2 {
+  height: 171.75px;
+  position: absolute;
+  right: 7.8px;
+  left: 0px;
+  top: 28.62px;
+}
+
+.item-link {
+  width: 145.39px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.new-watches-2024 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 145.59px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link2 {
+  width: 117.05px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 28.63px;
+}
+
+.find-your-rolex {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 117.25px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link3 {
+  width: 159.39px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 57.25px;
+}
+
+.configure-your-rolex {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 159.59px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link4 {
+  width: 111.73px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 85.88px;
+}
+
+.men-s-watches {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 111.93px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link5 {
+  width: 135.78px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 114.5px;
+}
+
+.women-s-watches {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 135.98px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link6 {
+  width: 103.14px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 143.13px;
+}
+
+.gold-watches {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 103.34px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.thecollection {
+  height: 198px;
+  position: absolute;
+  right: 41px;
+  left: 730px;
+  top: -5px;
+}
+
+.thecollection1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24.578125px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 171.42px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.thecollection2 {
+  height: 171px;
+  position: absolute;
+  right: 8px;
+  left: 0px;
+  top: 33px;
+}
+
+.item-link7 {
+  width: 163.63px;
+  height: 28.63px;
+  position: absolute;
+  left: 1px;
+  top: 0.38px;
+}
+
+.cosmograph-daytonaf {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 163.83px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link8 {
+  width: 70.5px;
+  height: 28.63px;
+  position: absolute;
+  left: 1px;
+  top: 29px;
+}
+
+.day-datef {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.625px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: -0.2px;
+  top: -3.48px;
+  width: 70.7px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link9 {
+  width: 106px;
+  height: 39px;
+  position: absolute;
+  left: -7px;
+  top: 86px;
+}
+
+.sky-dwellerf {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 7.8px;
+  top: 14.77px;
+  width: 90.53px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gmt-master-iif {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 1px;
+  top: 50px;
+  width: 106.47px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link10 {
+  width: 66.03px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 257.63px;
+}
+
+.deepseaf {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 1px;
+  top: 74px;
+  width: 66.23px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link11 {
+  width: 37.91px;
+  height: 28.63px;
+  position: absolute;
+  left: -12px;
+  top: 142.38px;
+}
+
+._1908f {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 1px;
+  top: 125px;
+  width: 38.11px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sport {
+  height: 172px;
+  position: absolute;
+  right: 393px;
+  left: 353px;
+  top: 0px;
+}
+
+.sport1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24.984375px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 204.98px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sport2 {
+  height: 143.13px;
+  position: absolute;
+  right: 7.8px;
+  left: 0px;
+  top: 28.62px;
+}
+
+.item-link12 {
+  width: 48.7px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.tennis {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 48.9px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link13 {
+  width: 32.23px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 28.63px;
+}
+
+.golf {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 32.43px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link14 {
+  width: 65.52px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 57.25px;
+}
+
+.yachting {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 65.72px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link15 {
+  width: 87.95px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 85.88px;
+}
+
+.motor-sport {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 88.15px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link16 {
+  width: 107.3px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 114.5px;
+}
+
+.equestrianism {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 107.5px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.else {
+  height: 122px;
+  position: absolute;
+  right: 385px;
+  left: 353px;
+  top: 226px;
+}
+
+.else1 {
+  height: 85.88px;
+  position: absolute;
+  right: 7.8px;
+  left: 0px;
+  top: 28.62px;
+}
+
+.item-link17 {
+  width: 98.2px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.store-locator {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 98.4px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link18 {
+  width: 113.3px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 28.63px;
+}
+
+.buying-a-rolex {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 113.5px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-link19 {
+  width: 202.09px;
+  height: 28.63px;
+  position: absolute;
+  left: 0px;
+  top: 57.25px;
+}
+
+.rolex-certified-pre-owned {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 28.64px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 202.29px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link3 {
+  height: 29px;
+  position: absolute;
+  right: 430px;
+  left: 352px;
+  top: 212px;
+}
+
+.buying-a-rolex2 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 25.1875px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 180.31px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.picture {
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 8703px;
+  overflow: hidden;
+  object-fit: cover;
 }

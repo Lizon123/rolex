@@ -1,38 +1,348 @@
-.mac-book-air-1,
-.mac-book-air-1 * {
-  box-sizing: border-box;
+header {
+  background: linear-gradient(90deg,
+      rgba(11, 62, 39, 1) 0%,
+      rgba(25, 113, 73, 1) 100%);
+  width: 100%;
+  height: 111px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
-.mac-book-air-1 {
-  background: #ffffff;
-  height: 4129px;
-  position: relative;
+.menut,
+.poshykt,
+.lokaciat,
+.liket {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  top: 7px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menup,
+.poshykp,
+.lokaciap,
+.likep {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  overflow: visible;
+}
+.menu {
+  width: 102px;
+  height: 36px;
+  position: absolute;
+  left: 92px;
+  top: 38px;
+}
+.menut {
+  left: 34px;
+  width: 55px;
+}
+.logo {
+  width: 52.9px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+}
+.poshyk {
+  width: 95.64px;
+  height: 38px;
+  position: absolute;
+  left: 816px;
+  top: 38px;
+}
+.poshykt {
+  left: 34.25px;
+  width: 53.59px;
+}
+.lokacia {
+  height: 38px;
+  position: absolute;
+  right: 210px;
+  left: 958px;
+  top: 38px;
+}
+.lokaciat {
+  left: 46px;
+  width: 66px;
+}
+.like {
+  height: 38px;
+  position: absolute;
+  right: 47px;
+  left: 1125px;
+  top: 38px;
+}
+.liket {
+  left: 31.25px;
+  width: 78.08px;
+}
+
+
+.mayster {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  left: 0px;
+  top: 202px;
   overflow: hidden;
 }
-.footer-1 {
+
+.mayster1 {
   position: absolute;
   right: 0px;
   left: 0px;
   bottom: 0px;
-  top: 3694px;
+  top: 0px;
   overflow: hidden;
-  object-fit: cover;
 }
+
+.mayster2, .mayster3 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mayster2 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  top: 156px;
+  width: 226px;
+  height: 55px;
+}
+
+.mayster3 {
+  font-size: 96px;
+  line-height: 95px;
+  font-weight: 700;
+  top: 116px;
+  width: 928px;
+  height: 417px;
+}
+
+.text {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 2892px;
+  top: 852px;
+}
+
+.text2, .text3 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 19px;
+  line-height: 32px;
+  position: absolute;
+  left: 657px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.text1 {
+  background: linear-gradient(129.7deg,
+      rgba(16, 99, 61, 1) 0%,
+      rgba(26, 145, 90, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 47px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 146px;
+  top: 119px;
+  width: 293px;
+  height: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text2 {
+  font-weight: 700;
+  top: 81px;
+  width: 515px;
+  height: 30px;
+}
+
+.text3 {
+  font-weight: 300;
+  top: 179px;
+  width: 563px;
+  height: 125px;
+
+}
+
+.dosk {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 2274px;
+  top: 1231px;
+
+}
+
+.dosk2, .dosk3 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dosk2 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  top: 392px;
+  width: 699px;
+  height: 72px;
+  
+}
+.dosk3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  top: 497px;
+  width: 777px;
+  height: 43px;
+  
+}
+
+.pech {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 1653px;
+  top: 1852px;
+
+}
+
+.pech2, .pech3 {
+  color: #f8f8f8;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pech2 {
+  font-size: 48.046875px;
+  line-height: 60px;
+  font-weight: 700;
+  top: 354px;
+  width: 533px;
+  height: 60px;
+}
+
+.pech3 {
+  font-size: 30px;
+  line-height: 40.02px;
+  font-weight: 300;
+  top: 460px;
+  width: 736px;
+  height: 64px;
+}
+
+.futer-1 {
+  background: #ffffff;
+  height: 92px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 2476px;
+  overflow: auto;
+}
+
+.share {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 15.5px;
+  line-height: 22px;
+  font-weight: 700;
+  position: absolute;
+  left: 101px;
+  top: 34.48px;
+  width: 97px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.program {
+  width: 232px;
+  height: 24px;
+  position: absolute;
+  left: 213.75px;
+  top: 34px;
+}
+
+.pinterest, .facebook, .threads{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 10px;
+  overflow: visible;
+}
+.pinterest {
+  left: 8px;
+}
+
+.facebook {
+  left: 44px;
+}
+
+.threads {
+  left: 80px;
+}
+
 .futer-2 {
   background: #f8f8f8;
   height: 501px;
   position: absolute;
   right: 0px;
   left: 0px;
-  top: 3192px;
+  top: 2568px;
 }
-.section-svg {
+
+.logof {
   width: 87.28px;
   height: 50px;
   position: absolute;
   left: 68px;
   top: 46px;
 }
-.vector {
+
+.logof1 {
   width: 27.39%;
   height: 52.03%;
   position: absolute;
@@ -42,7 +352,8 @@
   top: 1.19%;
   overflow: visible;
 }
-.group {
+
+.logof2 {
   width: 98.54%;
   height: 31.18%;
   position: absolute;
@@ -52,28 +363,24 @@
   top: 65.59%;
   overflow: visible;
 }
-.nav-list {
+
+.futert {
   height: 384px;
   position: absolute;
   right: 56px;
   left: 271px;
   top: 87px;
 }
-.item {
+
+.rolex-watches {
   height: 200px;
   position: absolute;
   right: 770px;
   left: 0px;
   top: 0px;
 }
-.link {
-  height: 28.63px;
-  position: absolute;
-  right: 7.8px;
-  left: 0px;
-  top: 0px;
-}
-.rolex-watches {
+
+.rolex-watches1 {
   color: #212121;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
@@ -89,13 +396,15 @@
   align-items: center;
   justify-content: flex-start;
 }
-.list {
+
+.rolex-watches2 {
   height: 171.75px;
   position: absolute;
   right: 7.8px;
   left: 0px;
   top: 28.62px;
 }
+
 .item-link {
   width: 145.39px;
   height: 28.63px;
@@ -103,6 +412,7 @@
   left: 0px;
   top: 0px;
 }
+
 .new-watches-2024 {
   color: #212121;
   text-align: left;
@@ -119,6 +429,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link2 {
   width: 117.05px;
   height: 28.63px;
@@ -126,6 +437,7 @@
   left: 0px;
   top: 28.63px;
 }
+
 .find-your-rolex {
   color: #212121;
   text-align: left;
@@ -142,6 +454,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link3 {
   width: 159.39px;
   height: 28.63px;
@@ -149,6 +462,7 @@
   left: 0px;
   top: 57.25px;
 }
+
 .configure-your-rolex {
   color: #212121;
   text-align: left;
@@ -165,6 +479,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link4 {
   width: 111.73px;
   height: 28.63px;
@@ -172,6 +487,7 @@
   left: 0px;
   top: 85.88px;
 }
+
 .men-s-watches {
   color: #212121;
   text-align: left;
@@ -188,6 +504,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link5 {
   width: 135.78px;
   height: 28.63px;
@@ -195,6 +512,7 @@
   left: 0px;
   top: 114.5px;
 }
+
 .women-s-watches {
   color: #212121;
   text-align: left;
@@ -211,6 +529,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link6 {
   width: 103.14px;
   height: 28.63px;
@@ -218,6 +537,7 @@
   left: 0px;
   top: 143.13px;
 }
+
 .gold-watches {
   color: #212121;
   text-align: left;
@@ -234,21 +554,16 @@
   align-items: center;
   justify-content: flex-start;
 }
-.item2 {
+
+.thecollection {
   height: 198px;
   position: absolute;
   right: 41px;
   left: 730px;
   top: -5px;
 }
-.link2 {
-  height: 29px;
-  position: absolute;
-  right: -20px;
-  left: 0px;
-  top: 0px;
-}
-.the-collection {
+
+.thecollection1 {
   color: #212121;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
@@ -264,13 +579,15 @@
   align-items: center;
   justify-content: flex-start;
 }
-.list2 {
+
+.thecollection2 {
   height: 171px;
   position: absolute;
   right: 8px;
   left: 0px;
   top: 33px;
 }
+
 .item-link7 {
   width: 163.63px;
   height: 28.63px;
@@ -278,7 +595,8 @@
   left: 1px;
   top: 0.38px;
 }
-.cosmograph-daytona {
+
+.cosmograph-daytonaf {
   color: #212121;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -294,6 +612,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link8 {
   width: 70.5px;
   height: 28.63px;
@@ -301,7 +620,8 @@
   left: 1px;
   top: 29px;
 }
-.day-date {
+
+.day-datef {
   color: #212121;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -317,6 +637,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link9 {
   width: 106px;
   height: 39px;
@@ -324,7 +645,8 @@
   left: -7px;
   top: 86px;
 }
-.sky-dweller {
+
+.sky-dwellerf {
   color: #212121;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -340,7 +662,8 @@
   align-items: center;
   justify-content: flex-start;
 }
-.gmt-master-ii {
+
+.gmt-master-iif {
   color: #212121;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -356,6 +679,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link10 {
   width: 66.03px;
   height: 28.63px;
@@ -363,7 +687,8 @@
   left: 0px;
   top: 257.63px;
 }
-.deepsea {
+
+.deepseaf {
   color: #212121;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -379,6 +704,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link11 {
   width: 37.91px;
   height: 28.63px;
@@ -386,7 +712,8 @@
   left: -12px;
   top: 142.38px;
 }
-._1908 {
+
+._1908f {
   color: #212121;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -402,14 +729,16 @@
   align-items: center;
   justify-content: flex-start;
 }
-.item3 {
+
+.sport {
   height: 172px;
   position: absolute;
   right: 393px;
   left: 353px;
   top: 0px;
 }
-.rolex-and-sports {
+
+.sport1 {
   color: #212121;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
@@ -425,13 +754,15 @@
   align-items: center;
   justify-content: flex-start;
 }
-.list3 {
+
+.sport2 {
   height: 143.13px;
   position: absolute;
   right: 7.8px;
   left: 0px;
   top: 28.62px;
 }
+
 .item-link12 {
   width: 48.7px;
   height: 28.63px;
@@ -439,6 +770,7 @@
   left: 0px;
   top: 0px;
 }
+
 .tennis {
   color: #212121;
   text-align: left;
@@ -455,6 +787,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link13 {
   width: 32.23px;
   height: 28.63px;
@@ -462,6 +795,7 @@
   left: 0px;
   top: 28.63px;
 }
+
 .golf {
   color: #212121;
   text-align: left;
@@ -478,6 +812,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link14 {
   width: 65.52px;
   height: 28.63px;
@@ -485,6 +820,7 @@
   left: 0px;
   top: 57.25px;
 }
+
 .yachting {
   color: #212121;
   text-align: left;
@@ -501,6 +837,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link15 {
   width: 87.95px;
   height: 28.63px;
@@ -508,6 +845,7 @@
   left: 0px;
   top: 85.88px;
 }
+
 .motor-sport {
   color: #212121;
   text-align: left;
@@ -524,6 +862,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .item-link16 {
   width: 107.3px;
   height: 28.63px;
@@ -531,6 +870,7 @@
   left: 0px;
   top: 114.5px;
 }
+
 .equestrianism {
   color: #212121;
   text-align: left;
@@ -547,701 +887,15 @@
   align-items: center;
   justify-content: flex-start;
 }
-.item4 {
-  height: 122px;
+
+
+.picture {
   position: absolute;
-  right: 385px;
-  left: 353px;
-  top: 226px;
-}
-.list4 {
-  height: 85.88px;
-  position: absolute;
-  right: 7.8px;
-  left: 0px;
-  top: 28.62px;
-}
-.item-link17 {
-  width: 98.2px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.store-locator {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 98.4px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link18 {
-  width: 113.3px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 28.63px;
-}
-.buying-a-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 113.5px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link19 {
-  width: 202.09px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 57.25px;
-}
-.rolex-certified-pre-owned {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 202.29px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.link3 {
-  height: 29px;
-  position: absolute;
-  right: 430px;
-  left: 352px;
-  top: 212px;
-}
-.buying-a-rolex2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 25.1875px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 180.31px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.futer-1 {
-  background: #ffffff;
-  height: 92px;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 3100px;
-  overflow: auto;
-}
-.div {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 15.5px;
-  line-height: 22px;
-  font-weight: 700;
-  position: absolute;
-  left: 101px;
-  top: 34.48px;
-  width: 97px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.list5 {
-  width: 232px;
-  height: 24px;
-  position: absolute;
-  left: 213.75px;
-  top: 34px;
-}
-.threads {
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  translate: 0 -50%;
-}
-.img {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-.facebook {
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  translate: 0 -50%;
-}
-.img2 {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-.pinterest {
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  left: 160px;
-  top: 50%;
-  translate: 0 -50%;
-}
-.img3 {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 88.25px;
-  top: 2px;
-  overflow: visible;
-}
-.aside-figure-picture-3 {
-  height: 624px;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 2476px;
-  overflow: hidden;
-}
-.anatomy {
-  position: absolute;
+  width: 100%;
   right: 0px;
   left: 0px;
   bottom: 0px;
-  top: 0px;
+  top: 3070px;
   overflow: hidden;
   object-fit: cover;
-}
-.aside-2 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 1653px;
-  top: 1852px;
-  overflow: hidden;
-}
-.behind-the-seal {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-behind-the-seal {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 48.046875px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 112px;
-  top: 354px;
-  width: 533px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.rolex {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 112px;
-  top: 460px;
-  width: 736px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.aside-1 {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 2274px;
-  top: 1231px;
-  overflow: hidden;
-}
-.watchmaking {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-.heading-2-at-the-core-of-excellence {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.65625px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 96px;
-  top: 392px;
-  width: 699px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div2 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 96px;
-  top: 497px;
-  width: 777px;
-  height: 43px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.section {
-  width: 1289px;
-  position: absolute;
-  left: 0px;
-  bottom: 2892px;
-  top: 852px;
-}
-.heading-2-a-perpetual-quest {
-  background: linear-gradient(
-    129.7deg,
-    rgba(16, 99, 61, 1) 0%,
-    rgba(26, 145, 90, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.4609375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 146px;
-  top: 119px;
-  width: 293px;
-  height: 119px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.rolex2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 19.0625px;
-  line-height: 32px;
-  font-weight: 700;
-  position: absolute;
-  left: 657px;
-  top: 81px;
-  width: 514.97px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.rolex-1905 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 19.84375px;
-  line-height: 32px;
-  font-weight: 300;
-  position: absolute;
-  left: 657px;
-  top: 179px;
-  width: 563px;
-  height: 125px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.header {
-  width: 1289px;
-  height: 650px;
-  position: absolute;
-  left: 0px;
-  top: 202px;
-  overflow: hidden;
-}
-.making-cover {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-}
-.div3 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 2.5px;
-  font-weight: 400;
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 156px;
-  width: 226px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.div4 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 95.80254364013672px;
-  line-height: 94.91px;
-  font-weight: 700;
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 116px;
-  width: 928px;
-  height: 417px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.background {
-  background: linear-gradient(
-    90deg,
-    rgba(11, 62, 39, 1) 0%,
-    rgba(25, 113, 73, 1) 100%
-  );
-  width: 1289px;
-  height: 111px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.list-item-button {
-  width: 102px;
-  height: 36px;
-  position: absolute;
-  left: 92px;
-  top: 38px;
-}
-.div5 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
-  left: 34px;
-  top: 8px;
-  width: 55px;
-  height: 23px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.svg {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-.figure-link-go-to-home-page {
-  width: 52.9px;
-  height: 56px;
-  position: absolute;
-  left: 50%;
-  translate: -50% -50%;
-  top: 50%;
-}
-.svg2 {
-  width: 36.9px;
-  height: 40px;
-  position: absolute;
-  left: 50%;
-  translate: -50% -50%;
-  top: 50%;
-}
-.vector2 {
-  width: 98.57%;
-  height: 98.17%;
-  position: absolute;
-  right: 0.65%;
-  left: 0.77%;
-  bottom: 0.86%;
-  top: 0.97%;
-  overflow: visible;
-}
-.vector3 {
-  width: 98.57%;
-  height: 97.97%;
-  position: absolute;
-  right: 0.47%;
-  left: 0.95%;
-  bottom: 1.22%;
-  top: 0.81%;
-  overflow: visible;
-}
-.vector4 {
-  width: 98.57%;
-  height: 98.17%;
-  position: absolute;
-  right: 0.65%;
-  left: 0.77%;
-  bottom: 0.86%;
-  top: 0.97%;
-  overflow: visible;
-}
-.vector5 {
-  width: 98.57%;
-  height: 98.17%;
-  position: absolute;
-  right: 0.65%;
-  left: 0.77%;
-  bottom: 0.86%;
-  top: 0.97%;
-  overflow: visible;
-}
-.vector6 {
-  width: 11.74%;
-  height: 10.83%;
-  position: absolute;
-  right: 87.38%;
-  left: 0.88%;
-  bottom: 64.96%;
-  top: 24.21%;
-  overflow: visible;
-}
-.vector7 {
-  width: 13.3%;
-  height: 12.26%;
-  position: absolute;
-  right: 67.09%;
-  left: 19.61%;
-  bottom: 80.03%;
-  top: 7.72%;
-  overflow: visible;
-}
-.vector8 {
-  width: 12.31%;
-  height: 12.27%;
-  position: absolute;
-  right: 44.06%;
-  left: 43.63%;
-  bottom: 86.71%;
-  top: 1.03%;
-  overflow: visible;
-}
-.vector9 {
-  width: 13.43%;
-  height: 12.84%;
-  position: absolute;
-  right: 19.93%;
-  left: 66.64%;
-  bottom: 79.35%;
-  top: 7.81%;
-  overflow: visible;
-}
-.vector10 {
-  width: 13.13%;
-  height: 12.24%;
-  position: absolute;
-  right: 0.73%;
-  left: 86.13%;
-  bottom: 63.61%;
-  top: 24.16%;
-  overflow: visible;
-}
-.group2 {
-  width: 88.36%;
-  height: 91.72%;
-  position: absolute;
-  right: 1.3%;
-  left: 10.34%;
-  bottom: 2.6%;
-  top: 5.68%;
-  overflow: visible;
-}
-.vector11 {
-  width: 66.86%;
-  height: 66.4%;
-  position: absolute;
-  right: 31.21%;
-  left: 1.93%;
-  bottom: 0.53%;
-  top: 33.08%;
-  overflow: visible;
-}
-.vector12 {
-  width: 27.07%;
-  height: 4.31%;
-  position: absolute;
-  right: 31.23%;
-  left: 41.7%;
-  bottom: 1.81%;
-  top: 93.88%;
-  overflow: visible;
-}
-.vector13 {
-  width: 32.54%;
-  height: 8.39%;
-  position: absolute;
-  right: 34.41%;
-  left: 33.05%;
-  bottom: 14.93%;
-  top: 76.68%;
-  overflow: visible;
-}
-.item-button {
-  width: 95.64px;
-  height: 38px;
-  position: absolute;
-  left: 816px;
-  top: 38px;
-}
-.svg3 {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-.div6 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
-  left: 34.25px;
-  top: 7.01px;
-  width: 53.59px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.item-link20 {
-  height: 38px;
-  position: absolute;
-  right: 210px;
-  left: 958px;
-  top: 38px;
-}
-.div7 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
-  left: 46px;
-  top: 7px;
-  width: 66px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.vector14 {
-  width: 11.99%;
-  height: 47.37%;
-  position: absolute;
-  right: 70.66%;
-  left: 17.36%;
-  bottom: 26.32%;
-  top: 26.32%;
-  overflow: visible;
-}
-.item-link21 {
-  height: 38px;
-  position: absolute;
-  right: 47px;
-  left: 1125px;
-  top: 38px;
-}
-.div8 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
-  left: 31.25px;
-  top: 7.01px;
-  width: 78.08px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.img4 {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 8px;
-  top: 9.01px;
-  overflow: visible;
 }

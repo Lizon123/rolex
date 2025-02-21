@@ -1,12 +1,42 @@
 header {
   background: linear-gradient(90deg,
-          rgba(11, 62, 39, 1) 0%,
-          rgba(25, 113, 73, 1) 100%);
+      rgba(11, 62, 39, 1) 0%,
+      rgba(25, 113, 73, 1) 100%);
   width: 100%;
   height: 111px;
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+.menut,
+.poshykt,
+.lokaciat,
+.liket {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  top: 7px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menup,
+.poshykp,
+.lokaciap,
+.likep {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  overflow: visible;
 }
 
 .menu {
@@ -18,40 +48,17 @@ header {
 }
 
 .menut {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
   left: 34px;
-  top: 8px;
   width: 55px;
-  height: 23px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.menup {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
 }
 
 .logo {
-
   width: 52.9px;
   height: 56px;
   position: absolute;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-
 }
 
 .poshyk {
@@ -62,30 +69,9 @@ header {
   top: 38px;
 }
 
-.poshykp {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-
 .poshykt {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
   left: 34.25px;
-  top: 7.01px;
   width: 53.59px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .lokacia {
@@ -97,30 +83,8 @@ header {
 }
 
 .lokaciat {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
   left: 46px;
-  top: 7px;
   width: 66px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.lokaciap {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 24px;
-  bottom: 26.32%;
-  top: 26.32%;
-  overflow: visible;
 }
 
 .like {
@@ -132,29 +96,8 @@ header {
 }
 
 .liket {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 22px;
-  font-weight: 400;
-  position: absolute;
   left: 31.25px;
-  top: 7.01px;
   width: 78.08px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.likep {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 8px;
-  top: 9.01px;
-  overflow: visible;
 }
 
 .history {
@@ -176,41 +119,36 @@ header {
   object-fit: cover;
 }
 
-.historyt1 {
+.historyt1,
+.historyt2 {
   color: #ffffff;
   text-align: center;
   font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 2.5px;
-  font-weight: 400;
   position: absolute;
   left: 50%;
   translate: -50%;
-  top: 245px;
-  width: 132px;
-  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.historyt1 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  top: 245px;
+  width: 132px;
+  height: 28px;
+}
+
 .historyt2 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Inter-Bold", sans-serif;
   font-size: 95.41230773925781px;
   line-height: 94.91px;
   font-weight: 700;
-  position: absolute;
-  left: 50%;
-  translate: -50%;
   top: 259px;
   width: 779px;
   height: 147px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .text {
@@ -223,8 +161,8 @@ header {
 
 .textsmall {
   background: linear-gradient(120.55deg,
-          rgba(16, 99, 61, 1) 0%,
-          rgba(26, 145, 90, 1) 100%);
+      rgba(16, 99, 61, 1) 0%,
+      rgba(26, 145, 90, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -279,536 +217,97 @@ header {
   object-fit: cover;
 }
 
-.datejust1 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.265625px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 82px;
-  top: 424px;
-  width: 195.45px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
+.air-king1,
+.air-king2,
+.deepsea1,
+.deepsea2,
+.sea-dweller1,
+.sea-dweller2,
+.day-date1,
+.day-date2,
+.submariner1,
+.submariner2,
+.datejust1,
 .datejust2 {
   color: #f8f8f8;
   text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.8828125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 82px;
-  top: 503px;
-  width: 489.81px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.submariner {
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: 7256px;
-  height: 624px;
-  top: 1882px;
-  overflow: hidden;
-}
-
-.submarinerp {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.submariner1 {
-  color: #f8f8f8;
-  text-align: left;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 47.4609375px;
-  line-height: 60px;
-  font-weight: 700;
   position: absolute;
-  left: 87px;
-  top: 419px;
-  width: 271.95px;
-  height: 60px;
+  left: 90px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.submariner2 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 87px;
-  top: 501px;
-  width: 575px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.gmt-master-ii {
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: 6632px;
-  height: 624px;
-  top: 2506px;
-  overflow: hidden;
-}
-
-.gmt-master-iip {
-  height: auto;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: visible;
-}
-
-.gmt-master-ii1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 46.484375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 88px;
-  top: 392px;
-  width: 326.36px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
+.sky-dweller1,
+.sky-dweller2,
+.lady-datejust1,
+.lady-datejust2,
+.yacht-master1,
+.yacht-master2,
+.cosmograph-daytona1,
+.cosmograph-daytona2,
+.gmt-master-ii1,
 .gmt-master-ii2 {
   color: #212121;
   text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.53125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 88px;
-  top: 484px;
-  width: 512px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.day-date {
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: 6008px;
-  height: 624px;
-  top: 3130px;
-  overflow: hidden;
-}
-
-.day-datep {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.day-date1 {
-  color: #f8f8f8;
-  text-align: left;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 47.0703125px;
-  line-height: 60px;
-  font-weight: 700;
   position: absolute;
   left: 90px;
-  top: 406px;
-  width: 218.15px;
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.day-date2 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 90px;
-  top: 466px;
-  width: 602.61px;
-  height: 84.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.cosmograph-daytona {
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: 5384px;
-  height: 624px;
-  top: 3754px;
-  overflow: hidden;
-}
-
-.cosmograph-daytonap {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.cosmograph-daytona1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.4609375px;
+.datejust1,
+.submariner1,
+.gmt-master-ii1,
+.day-date1,
+.cosmograph-daytona1,
+.yacht-master1,
+.sea-dweller1,
+.deepsea1,
+.air-king1,
+.lady-datejust1,
+.sky-dweller1 {
+  font-size: 47px;
   line-height: 60px;
   font-weight: 700;
-  position: absolute;
-  left: 84px;
-  top: 432px;
-  width: 504.81px;
+  top: 400px;
+  width: 400px;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
-.cosmograph-daytona2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
+.datejust2,
+.submariner2,
+.gmt-master-ii2,
+.day-date2,
+.cosmograph-daytona2,
+.yacht-master2,
+.sea-dweller2,
+.deepsea2,
+.air-king2,
+.lady-datejust2,
+.sky-dweller2 {
   font-size: 30px;
-  line-height: 40.02px;
+  line-height: 40px;
   font-weight: 300;
   position: absolute;
-  left: 84px;
-  top: 514px;
-  width: 622.53px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.yacht-master {
-  width: 100%;
-  height: 624px;
-  position: absolute;
-  left: 0px;
-  bottom: 4766px;
-  top: 4372px;
-  overflow: hidden;
-}
-
-.yacht-masterp {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.yacht-master1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 45.8984375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 83px;
-  top: 383px;
-  width: 308.2px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.yacht-master2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 83px;
-  top: 470px;
-  width: 508.05px;
-  height: 84.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.sea-dweller {
-  width: 100%;
-  height: 624px;
-  position: absolute;
-  left: 0px;
-  bottom: 4142px;
-  top: 4996px;
-  overflow: hidden;
-}
-
-.sea-dwellerp {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.sea-dweller1 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.4609375px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 89px;
-  top: 404px;
-  width: 285.86px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.sea-dweller2 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.6484375px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 89px;
-  top: 487px;
-  width: 443px;
+  top: 500px;
+  width: 470Spx;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
-.deepsea {
-  width: 100%;
-  height: 624px;
-  position: absolute;
-  left: 0px;
-  bottom: 3518px;
-  top: 5620px;
-  overflow: hidden;
-}
-
-.deepseap {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.deepsea1 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 48.046875px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 86px;
-  top: 396px;
-  width: 207.06px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.deepsea2 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 30px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 86px;
-  top: 479px;
-  width: 555px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.air-king {
-  width: 100%;
-  height: 624px;
-  position: absolute;
-  left: 0px;
-  bottom: 2900px;
-  top: 6238px;
-  overflow: hidden;
-}
-
-.air-kingp {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.air-king1 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 46.6796875px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 91px;
-  top: 410px;
-  width: 193.36px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.air-king2 {
-  color: #f8f8f8;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.8828125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 91px;
-  top: 470px;
-  width: 626.88px;
-  height: 84.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.lady-datejust {
-  width: 100%;
-  height: 624px;
-  position: absolute;
-  left: 0px;
-  bottom: 2276px;
-  top: 6862px;
-  overflow: hidden;
-}
-
-.lady-datejustp {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.lady-datejust1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.0703125px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 106px;
-  top: 431px;
-  width: 328.56px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.lady-datejust2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.8828125px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 106px;
-  top: 517px;
-  width: 422.61px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.sky-dweller {
-  width: 100%;
-  height: 624px;
-  position: absolute;
-  left: 0px;
-  bottom: 1652px;
-  top: 7486px;
-  overflow: hidden;
-}
-
+.datejustp,
+.submarinerp,
+.gmt-master-iip,
+.day-datep,
+.cosmograph-daytonap,
+.yacht-masterp,
+.sea-dwellerp,
+.deepseap,
+.air-kingp,
+.lady-datejustp,
 .sky-dwellerp {
   position: absolute;
   right: 0px;
@@ -819,38 +318,72 @@ header {
   object-fit: cover;
 }
 
-.sky-dweller1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 47.265625px;
-  line-height: 60px;
-  font-weight: 700;
+.datejust,
+.submariner,
+.gmt-master-ii,
+.day-date,
+.cosmograph-daytona,
+.yacht-master,
+.sea-dweller,
+.deepsea,
+.air-king,
+.lady-datejust,
+.sky-dweller {
+  width: 100%;
   position: absolute;
-  left: 100px;
-  top: 424px;
-  width: 285.26px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  left: 0px;
+  height: 624px;
+  overflow: hidden;
 }
 
-.sky-dweller2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Light", sans-serif;
-  font-size: 29.6484375px;
-  line-height: 40.02px;
-  font-weight: 300;
-  position: absolute;
-  left: 100px;
-  top: 506px;
-  width: 431.4px;
-  height: 40.02px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.submariner {
+  bottom: 7256px;
+  top: 1882px;
+}
+
+.gmt-master-ii {
+  bottom: 6632px;
+  top: 2506px;
+}
+
+.day-date {
+  bottom: 6008px;
+  top: 3130px;
+}
+
+.cosmograph-daytona {
+  bottom: 5384px;
+  top: 3754px;
+}
+
+.yacht-master {
+  bottom: 4766px;
+  top: 4372px;
+}
+
+.sea-dweller {
+  bottom: 4142px;
+  top: 4996px;
+}
+
+.deepsea {
+  bottom: 3518px;
+  top: 5620px;
+}
+
+.air-king {
+  bottom: 2900px;
+  top: 6238px;
+}
+
+.lady-datejust {
+  bottom: 2276px;
+  top: 6862px;
+}
+
+.sky-dweller {
+  bottom: 1652px;
+  top: 7486px;
 }
 
 .futer-1 {
@@ -888,31 +421,26 @@ header {
   top: 34px;
 }
 
-.pinterest {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  overflow: visible;
-}
-
-.facebook {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 44px;
-  top: 10px;
-  overflow: visible;
-}
-
+.pinterest,
+.facebook,
 .threads {
   width: 16px;
   height: 16px;
   position: absolute;
-  left: 80px;
   top: 10px;
   overflow: visible;
+}
+
+.pinterest {
+  left: 8px;
+}
+
+.facebook {
+  left: 44px;
+}
+
+.threads {
+  left: 80px;
 }
 
 .futer-2 {
@@ -954,6 +482,79 @@ header {
   overflow: visible;
 }
 
+.new-watches-2024,
+.find-your-rolex,
+.configure-your-rolex,
+.men-s-watches,
+.women-s-watches,
+.gold-watches,
+.cosmograph-daytonaf,
+.day-datef,
+.sky-dwellerf,
+.gmt-master-iif,
+.deepseaf,
+._1908f,
+.tennis,
+.golf,
+.yachting,
+.motor-sport,
+.equestrianism {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.8px;
+  line-height: 29px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.new-watches-2024,
+.find-your-rolex,
+.configure-your-rolex,
+.men-s-watches,
+.women-s-watches,
+.gold-watches,
+.cosmograph-daytonaf,
+.day-datef,
+.sky-dwellerf,
+.gmt-master-iif,
+.deepseaf,
+._1908f,
+.tennis,
+.golf,
+.yachting,
+.motor-sport,
+.equestrianism {
+  height: 29px;
+  position: absolute;
+  left: 0px;
+}
+
+.thecollection1,
+.rolex-watches1,
+.sport1 {
+  color: #212121;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24.78125px;
+  line-height: 28.64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 250px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .futert {
   height: 384px;
   position: absolute;
@@ -970,23 +571,6 @@ header {
   top: 0px;
 }
 
-.rolex-watches1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24.78125px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 176.87px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 .rolex-watches2 {
   height: 171.75px;
   position: absolute;
@@ -995,154 +579,35 @@ header {
   top: 28.62px;
 }
 
-.item-link {
-  width: 145.39px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
+.new-watches-2024 {
+  width: 146px;
   top: 0px;
 }
 
-.new-watches-2024 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 145.59px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link2 {
-  width: 117.05px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 28.63px;
-}
-
 .find-your-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 117.25px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link3 {
-  width: 159.39px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 57.25px;
+  width: 117px;
+  top: 29px;
 }
 
 .configure-your-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 159.59px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  width: 160px;
+  top: 58px;
 }
 
-.item-link4 {
-  width: 111.73px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 85.88px;
-}
 
 .men-s-watches {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 111.93px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link5 {
-  width: 135.78px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 114.5px;
+  width: 112px;
+  top: 91px;
 }
 
 .women-s-watches {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 135.98px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link6 {
-  width: 103.14px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 143.13px;
+  width: 136px;
+  top: 116px;
 }
 
 .gold-watches {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
   width: 103.34px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  top: 145px;
 }
 
 .thecollection {
@@ -1153,23 +618,6 @@ header {
   top: -5px;
 }
 
-.thecollection1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24.578125px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 171.42px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 .thecollection2 {
   height: 171px;
   position: absolute;
@@ -1178,146 +626,34 @@ header {
   top: 33px;
 }
 
-.item-link7 {
-  width: 163.63px;
-  height: 28.63px;
-  position: absolute;
-  left: 1px;
-  top: 0.38px;
-}
-
 .cosmograph-daytonaf {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
   width: 163.83px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link8 {
-  width: 70.5px;
-  height: 28.63px;
-  position: absolute;
-  left: 1px;
-  top: 29px;
+  top: 0.5px
 }
 
 .day-datef {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.625px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: -0.2px;
-  top: -3.48px;
   width: 70.7px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link9 {
-  width: 106px;
-  height: 39px;
-  position: absolute;
-  left: -7px;
-  top: 86px;
-}
-
-.sky-dwellerf {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 7.8px;
-  top: 14.77px;
-  width: 90.53px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  top: 29px;
 }
 
 .gmt-master-iif {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1px;
-  top: 50px;
   width: 106.47px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  top: 58px;
 }
 
-.item-link10 {
-  width: 66.03px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 257.63px;
+.sky-dwellerf {
+  width: 90px;
+  top: 86px;
 }
 
 .deepseaf {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1px;
-  top: 74px;
-  width: 66.23px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link11 {
-  width: 37.91px;
-  height: 28.63px;
-  position: absolute;
-  left: -12px;
-  top: 142.38px;
+  width: 66px;
+  top: 115px;
 }
 
 ._1908f {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 1px;
-  top: 125px;
-  width: 38.11px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  width: 38px;
+  top: 145px;
 }
 
 .sport {
@@ -1328,23 +664,6 @@ header {
   top: 0px;
 }
 
-.sport1 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 24.984375px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 204.98px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 .sport2 {
   height: 143.13px;
   position: absolute;
@@ -1353,245 +672,29 @@ header {
   top: 28.62px;
 }
 
-.item-link12 {
-  width: 48.7px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
 .tennis {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
   width: 48.9px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link13 {
-  width: 32.23px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 28.63px;
+  top: 0px;
 }
 
 .golf {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 32.43px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link14 {
-  width: 65.52px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 57.25px;
-}
-
-.yachting {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 65.72px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link15 {
-  width: 87.95px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 85.88px;
-}
-
-.motor-sport {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.75px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 88.15px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link16 {
-  width: 107.3px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 114.5px;
-}
-
-.equestrianism {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 107.5px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.else {
-  height: 122px;
-  position: absolute;
-  right: 385px;
-  left: 353px;
-  top: 226px;
-}
-
-.else1 {
-  height: 85.88px;
-  position: absolute;
-  right: 7.8px;
-  left: 0px;
-  top: 28.62px;
-}
-
-.item-link17 {
-  width: 98.2px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.store-locator {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 98.4px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link18 {
-  width: 113.3px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
+  width: 32px;
   top: 28.63px;
 }
 
-.buying-a-rolex {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 113.5px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.item-link19 {
-  width: 202.09px;
-  height: 28.63px;
-  position: absolute;
-  left: 0px;
+.yachting {
+  width: 66px;
   top: 57.25px;
 }
 
-.rolex-certified-pre-owned {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 15.875px;
-  line-height: 28.64px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 2px;
-  width: 202.29px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.motor-sport {
+  width: 88.15px;
+  top: 85.88px;
 }
 
-.link3 {
-  height: 29px;
-  position: absolute;
-  right: 430px;
-  left: 352px;
-  top: 212px;
-}
-
-.buying-a-rolex2 {
-  color: #212121;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 25.1875px;
-  line-height: 28.64px;
-  font-weight: 700;
-  position: absolute;
-  left: 0px;
-  top: -5px;
-  width: 180.31px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.equestrianism {
+  width: 107.5px;
+  top: 114.5px;
 }
 
 .picture {
